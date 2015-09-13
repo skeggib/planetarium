@@ -1,0 +1,106 @@
+div.solar-system {
+	position: absolute;
+
+	width: 600px;
+	height: 600px;
+
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	border: dashed 1px #999;
+
+	overflow: hidden;
+}
+
+	div.solar-system div {
+		box-sizing: border-box;
+	}
+
+	div.solar-system div.planete {
+		position: absolute;
+
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%, -50%);
+	}
+
+		div.solar-system div.planete div.trajectory {
+			position: absolute;
+
+			width: 100%;
+			height: 100%;
+
+			border-radius: 50%;
+
+			border: solid rgba(0, 0, 0, 0.7) 1px;
+		}
+
+		div.solar-system div.planete div.disc-container {
+			position: absolute;
+
+			top: 50%;
+			left: 50%;
+
+			transform: translate(-50%, -50%);
+
+			width: 100%;
+			height: 100%;
+
+			animation-name: planete-rotate;
+		    animation-timing-function: linear;
+		    animation-iteration-count: infinite;
+
+			-webkit-animation-name: planete-rotate;
+		    -webkit-animation-timing-function: linear;
+		    -webkit-animation-iteration-count: infinite;
+		}
+
+			div.solar-system div.planete div.disc-container div.disc {
+				position: absolute;
+
+				background-color: black;
+
+				border-radius: 50%;
+
+				border: solid black 1px;
+
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+	div.solar-system .sun {
+		position: absolute;
+
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%, -50%);
+
+		border-radius: 50%;
+
+		background-color: #f1c40f;
+	}
+
+
+
+
+@-webkit-keyframes planete-rotate {
+    from {
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to { 
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes planete-rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to { 
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
