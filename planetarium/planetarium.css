@@ -35,7 +35,7 @@ div.solar-system {
 
 			border-radius: 50%;
 
-			border: solid rgba(0, 0, 0, 0.7) 1px;
+			border: solid rgba(0, 0, 0, 0.5) 1px;
 		}
 
 		div.solar-system div.planete div.disc-container {
@@ -65,7 +65,7 @@ div.solar-system {
 
 				border-radius: 50%;
 
-				border: solid black 1px;
+				/*border: solid black 1px;*/
 
 				left: 50%;
 				transform: translate(-50%, -50%);
