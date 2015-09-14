@@ -1,14 +1,14 @@
 # planetarium
 
-Planetarium est un 
+Planetarium est une micro-librairie permettant de créer un système solaire animé en HTML.
 
 ## Utilisation
 
-Include le css, le javascript et jQuery dans la page html :
+Include le css, le javascript et jQuery dans la page HTML :
 ```
 <link rel="stylesheet" type="text/css" href="planetarium/planetarium.css">
-<script src="jquery.js"></script>
 <script src="planetarium/planetarium.js"></script>
+<script src="jquery.js"></script>
 ```
 
 Définir un div de class "solar-system" :
